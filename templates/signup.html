@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id='form'>
+    <form method='post'>
+        
+        
+        <p>Secret Agent Santa Application</p>
+        <ul>
+            <li>
+                <div class='field'>
+                    <div class='label'>
+                        <label>1. Name:<label>
+                    </div>
+                    <div class='typed'>
+                        <input type="text" name="name">{{name}}</input>
+                    </div>
+                    <br />
+                </div>
+            </li>
+
+            <li>
+                <div class='field'>
+                    <div class='label'>
+                        <label>2. Contact Email<label>
+                    </div>
+                    <div class='typed'>
+                        <input type="text" name="email">{{email}}</input>
+                    </div>
+                    <br />
+                </div>
+            </li>
+
+            <li>
+                <div class='field'>
+                    <div class='label'>
+                        <label>3. Next of Kin (optional)<label>
+                    </div>                    
+
+                    <div class='typed'>
+                        <input type="text" name="email">{{choice}}</input>
+                    </div>
+                    <br/>
+                </div>
+            </li>
+
+            <li>
+                <div class='field'>
+                    <div class='label'>
+                        <label>4. Qualifications (optional)<label>
+                    </div>
+
+                    <div class='typed'>
+                        <textarea name="message" style="height: 100px;">{{message}}</textarea>
+                    </div>
+                    <br />
+                </div>
+            </li>
+        </ul>
+
+        <input type="submit" style='width:100%; text-align:center;' />
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <script>
+        var count=10;
+
+        function timer() {
+            count=count-1;
+            if (count <= 0) {
+                clearInterval(counter);
+                return;
+            }
+            
+            if (count == 1) {
+                document.getElementById("timer").innerHTML=count + " second"; // watch for spelling
+            }
+            else {
+                document.getElementById("timer").innerHTML=count + " seconds"; // watch for spelling
+            }
+        }
+
+        var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+
+        window.setTimeout(function() {
+            window.location.href = 'http://www.youtube.com/watch?v=YuiU1DiDarQ'; 
+        }, count * 1000);
+    </script>
+
+    <div class='typed'>
+    Thank you, <span class='redacted'>{{name}}</span>. Your codename will be <b>{{codename}}</b>.
+
+    This letter will self-destruct in <span id="timer"></span>.
+    </div>
+
+{% endblock %}

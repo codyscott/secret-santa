@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secret Agent Santa</title>
+
+    <script type="text/javascript" src="//use.typekit.net/tno4fks.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		
+    <style type="text/css">
+        
+
+        .content {
+            width: 300px;
+        }
+
+        .field {
+            border-top:2px solid;
+            border-bottom:none;
+        }
+
+        .form {
+            border:2px solid;
+        }
+
+        .redacted {
+            color: black;
+            background-color: black;
+        }
+
+        .label {
+            font-size:10pt;
+            font-weight:bold;
+            font-family:sans-serif;
+        }
+
+        .typed {
+            font-family: "john-doe";
+        }
+            
+        p {
+            font-size:12pt;
+            font-weight:bold;
+            font-family:sans-serif;
+            text-align: center;
+        }
+        
+        form {
+            border:2px solid;
+        }
+
+        ul {
+            list-style:none;
+            padding-left: 0;
+        }
+
+        li:first-child {
+        }
+
+        li:last-child { 
+            border-bottom: none;  
+        }
+
+        input {
+            border:0;
+            width: 90%;
+            align: center;
+            text-align:right;
+            font-size: 12pt;
+            font-family: inherit;
+            line-height:3em;
+        }
+
+        input:focus {
+            outline:0;
+        }
+
+        textarea {
+            border:0;
+            width:90%;
+            resize:none;
+            font-family: inherit;
+        }
+
+        textarea:focus {
+            outline:0;
+        }
+
+        div#label {
+            font-family:sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='content'>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+
+</html>
+
